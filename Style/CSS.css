@@ -74,5 +74,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.wrapper {
+  min-height: 100vh;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/Fullscreen.png") center center no-repeat;
+  background-size: cover;
+  border: 1px solid #000;
+  position: relative;
+}
+.banner p {
+  position: relative;
+  z-index: 1;
+}
+.banner__title {
+  position: relative;
+  z-index: 2;
+}
 
 /*# sourceMappingURL=CSS.css.map */

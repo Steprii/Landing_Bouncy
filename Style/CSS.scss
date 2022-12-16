@@ -1,3 +1,34 @@
 @import "Nullstyle.scss";
 
+.wrapper{
+  min-height: 100vh;
 
+}
+//.container{
+//  width: 1366px;
+//  margin: 0 auto;
+//}
+
+
+
+.banner{
+  position: relative;
+
+    min-height: 100vh;
+    background: url("../img/Fullscreen.png") center center no-repeat;
+    background-size: cover ;
+    border: 1px solid #000;
+    position: relative;
+    p{
+      position: relative;
+      z-index: 1;
+    }
+
+  &__title{
+    position: relative;
+    z-index: 2;
+  }
+  &__text{
+
+  }
+}

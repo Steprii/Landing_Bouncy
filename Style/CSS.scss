@@ -2,7 +2,7 @@
 
 .wrapper{
   min-height: 100vh;
-
+  overflow: hidden;
 }
 //.container{
 //  width: 1366px;
@@ -11,24 +11,159 @@
 
 
 
-.banner{
-  position: relative;
 
+
+
+.fullscreen{
     min-height: 100vh;
     background: url("../img/Fullscreen.png") center center no-repeat;
     background-size: cover ;
     border: 1px solid #000;
     position: relative;
-    p{
-      position: relative;
-      z-index: 1;
-    }
+}
+.header{
+  padding: 45px 20px 0 20px;
+  &__container{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 
-  &__title{
-    position: relative;
-    z-index: 2;
   }
-  &__text{
+  &__logo{
+      font-size: 25px;
+      font-family: "Big John";
+      color: rgb(255, 255, 255);
+      line-height: 0.48;
+      text-align: center;
+  }
+  &__nav{
+    display: flex;
+    justify-content: right;
+    li{
+      font-size: 16px;
+      font-family: "Open Sans";
+      color: #fff;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      margin: 0 0 0 27px;
+      letter-spacing: 1px;
+      a{
+        color: #fff;
+      }
+      &:first-child{
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0 10px;
+      }
+     }
+    @media (max-width: 710px) {
+      display: none;
+    }
+   }
 
+}
+.burger{
+  display: none;
+  width: 50px;
+  span {
+    display: block;
+    height: 5px;
+    width: 50px;
+    background-color: #fff;
+    transition: width .3s ease-in;
+    margin: 0 auto;
+  }
+
+  span + span {
+    margin-top: 6px;
+  }
+  &__2 {
+    background-color: transparent !important;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      transition: all .3s ease-in;
+      position: absolute;
+      display: block;
+      height: 5px;
+      width: 50px;
+      background-color: #fff;
+    }
+  }
+  &.open {
+    .burger__1,
+    .burger__3 {
+      width: 0 !important;
+    }
+    .burger__2 {
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  @media (max-width: 710px) {
+    display: block;
   }
 }
+.sidebar {
+  transform: translateX(-200px);
+  transition: all .3s ease-in;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #fff;
+  color: #181818;
+  padding: 20px;
+  z-index: 5;
+  ul {
+    li {
+      a {
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        &:active {
+          color: #000;
+        }
+      }
+    }
+  }
+  &.open {
+    transform: translateX(0px);
+  }
+}
+.banner{
+  max-width: 610px;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+  &__title{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Source Sans Pro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 10px;
+  }
+   &__text{
+       font-size: 16px;
+       font-family: "Open Sans";
+       color: rgb(255, 255, 255);
+       font-weight: bold;
+       line-height: 1.75;
+       text-align: center;
+   }
+}
+

@@ -74,23 +74,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.wrapper {
-  min-height: 100vh;
-  overflow: hidden;
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .fullscreen {
   min-height: 100vh;
   background: url("../img/Fullscreen.png") center center no-repeat;
   background-size: cover;
-  border: 1px solid #000;
   position: relative;
 }
 
 .header {
   padding: 45px 20px 0 20px;
-}
-.header__container {
   max-width: 1240px;
   margin: 0 auto;
   display: flex;
@@ -98,18 +100,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__logo {
   font-size: 25px;
-  font-family: "Big John";
+  font-family: "Big John", sans-serif;
   color: rgb(255, 255, 255);
   line-height: 0.48;
   text-align: center;
 }
-.header__nav {
+
+.nav {
   display: flex;
   justify-content: right;
 }
-.header__nav li {
+.nav__item {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: bold;
   line-height: 30px;
@@ -117,17 +120,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 27px;
   letter-spacing: 1px;
 }
-.header__nav li a {
-  color: #fff;
-}
-.header__nav li:first-child {
+.nav__item--active {
   border: 1px solid #fff;
   border-radius: 10px;
   margin: 0;
   padding: 0 10px;
 }
+.nav__link {
+  color: #fff;
+}
 @media (max-width: 710px) {
-  .header__nav {
+  .nav {
     display: none;
   }
 }
@@ -207,13 +210,12 @@ h1, h2, h3, h4, h5, h6 {
 .banner {
   max-width: 610px;
   margin: 0 auto;
-  position: relative;
-  top: 250px;
+  padding-top: 250px;
 }
 .banner__title {
   text-align: center;
   font-size: 35px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 2;
@@ -221,11 +223,133 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__text {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.75;
   text-align: center;
+}
+
+.small-container {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.big-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(56, 61, 71);
+  text-transform: uppercase;
+  line-height: 0.6;
+}
+
+.btn {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(56, 61, 71);
+  font-weight: bold;
+  line-height: 0.75;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+  line-height: 0.6;
+}
+
+.about {
+  margin: 81px 0 0 0;
+}
+.about__details {
+  margin-top: 165px;
+}
+
+.bouncy {
+  display: flex;
+  justify-content: space-between;
+}
+.bouncy__column {
+  width: 488px;
+}
+.bouncy__text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(129, 133, 140);
+  font-weight: bold;
+  line-height: 1.786;
+  padding-top: 37px;
+}
+.bouncy__button {
+  padding-top: 37px;
+}
+.details__title {
+  text-align: center;
+}
+.details__text {
+  margin-top: 39px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(129, 133, 140);
+  font-weight: bold;
+  line-height: 1.786;
+  padding-top: 37px;
+  text-align: center;
+}
+.details__row {
+  margin-top: 59px;
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+}
+.details__icon {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color: #81858c;
+}
+.details__icon:hover {
+  background-color: #6cbc9a;
+}
+
+.creative__subtitle {
+  margin: 45px 0;
+}
+.creative__row {
+  display: flex;
+  justify-content: space-between;
+}
+.creative__text {
+  max-width: 325px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(129, 133, 140);
+  font-weight: bold;
+  line-height: 1.786;
+}
+.creative__text2 {
+  margin-left: 134px;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(129, 133, 140);
+  font-weight: bold;
+  line-height: 1.786;
 }
 
 /*# sourceMappingURL=CSS.css.map */

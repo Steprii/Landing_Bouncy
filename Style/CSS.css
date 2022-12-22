@@ -618,7 +618,7 @@ body {
 }
 @media (max-width: 840px) {
   .graphic__circle {
-    margin-top: 10px;
+    margin-top: 40px;
   }
   .graphic__circle + .graphic__circle {
     margin-left: 0;
@@ -675,6 +675,143 @@ body {
 @media (max-width: 760px) {
   .impressed__img {
     display: none;
+  }
+}
+@media (max-width: 760px) {
+  .impressed {
+    margin-top: 50px;
+  }
+}
+
+.portfolio {
+  margin-top: 80px;
+}
+.portfolio__title {
+  text-align: center;
+}
+.portfolio__text {
+  margin-top: 41px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(129, 133, 140);
+  font-weight: bold;
+  line-height: 1.786;
+  text-align: center;
+}
+.portfolio__menu {
+  max-width: 616px;
+  margin: 80px auto 0 auto;
+}
+.portfolio__menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio__menu ul li {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+  line-height: 0.75;
+}
+.portfolio__grid {
+  max-width: 1110px;
+  margin: 75px auto 0 auto;
+}
+.portfolio__banner {
+  max-width: 1110px;
+  margin: 0 auto;
+  background-image: url("../img/Layer 101.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: -100px;
+}
+
+.banner__body {
+  padding: 10px 0;
+}
+
+.banner__text {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.banner__button {
+  color: #fff;
+  border-color: #fff;
+  margin: 32px 0 60px 0;
+  text-align: center;
+}
+
+.grid {
+  display: inline-block;
+}
+.grid img {
+  padding: 2px;
+  display: inline-block;
+}
+.grid-img6 {
+  position: relative;
+  top: -130px;
+}
+.grid-img7 {
+  position: relative;
+  top: -57px;
+}
+.grid-img9 {
+  position: relative;
+  top: -5px;
+}
+.grid-img10 {
+  position: relative;
+  top: -158px;
+}
+.grid-img11 {
+  position: relative;
+  top: -54px;
+}
+.grid-img12 {
+  position: relative;
+  top: -99px;
+}
+@media (max-width: 1106px) {
+  .grid-img5 {
+    position: relative;
+    top: -130px;
+  }
+  .grid-img6 {
+    position: relative;
+    top: -55px;
+  }
+  .grid-img7 {
+    position: relative;
+    top: 3px;
+  }
+  .grid-img8 {
+    position: relative;
+    top: -128px;
+  }
+  .grid-img8 {
+    position: relative;
+    top: -128px;
+  }
+  .grid-img9 {
+    position: relative;
+    top: -67px;
+  }
+  .grid-img10 {
+    position: relative;
+    top: 8px;
+    visibility: hidden;
+  }
+  .grid-img11 {
+    position: relative;
+    top: -230px;
+  }
+  .grid-img12 {
+    position: relative;
+    top: -228px;
   }
 }
 

@@ -554,7 +554,8 @@ body {
       &+&{
         margin-left: 0;
       }
-      margin-top: 10px;
+      margin-top: 40px;
+
     }
   }
 }
@@ -606,6 +607,137 @@ body {
       display: none;
     }
   }
+  @media (max-width:760px) {
+    margin-top: 50px;
+  }
 }
-
-
+.portfolio{
+  margin-top: 80px;
+  &__title{
+    text-align: center;
+  }
+  &__text{
+    margin-top: 41px;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    color: rgb(129, 133, 140);
+    font-weight: bold;
+    line-height: 1.786;
+    text-align: center;
+  }
+  &__menu{
+    max-width: 616px;
+    margin: 80px auto 0 auto;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+          font-size: 16px;
+          font-family: "Open Sans",sans-serif;
+          color: rgb(72, 72, 72);
+          font-weight: bold;
+          line-height: 0.75;
+      }
+    }
+  }
+  &__grid{
+    max-width: 1110px;
+    //max-height: 200px;
+    margin: 75px auto 0 auto;
+  }
+  &__banner{
+    max-width: 1110px;
+    margin: 0 auto;
+    background-image: url("../img/Layer 101.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: -100px;
+  }
+}
+.banner__body{
+  padding: 10px 0;
+}
+  .banner__text{
+    text-align: center;
+    padding-top: 60px;
+  }
+  .banner__button{
+    color: #fff;
+    border-color:#fff;
+    margin: 32px 0 60px 0;
+    text-align: center;
+  }
+  .grid{
+  display: inline-block;
+  img{
+    padding: 2px;
+    display: inline-block;
+    //border: 1px solid #000;
+    
+  }
+  &-img6{
+    position: relative;
+    top: -130px;
+  }
+  &-img7{
+    position: relative;
+    top: -57px;
+  }
+  &-img9{
+    position: relative;
+    top: -5px;
+  }
+  &-img10{
+    position: relative;
+    top: -158px;
+  }
+  &-img11{
+    position: relative;
+    top: -54px;
+  }
+  &-img12{
+    position: relative;
+    top: -99px;
+  }
+  @media (max-width: 1106px) {
+    &-img5{
+      position: relative;
+      top: -130px;
+    }
+    &-img6{
+      position: relative;
+      top: -55px;
+    }
+    &-img7{
+      position: relative;
+      top: 3px;
+    }
+    &-img8{
+      position: relative;
+      top: -128px;
+    }
+    &-img8{
+      position: relative;
+      top: -128px;
+    }
+    &-img9{
+      position: relative;
+      top: -67px;
+    }
+    &-img10{
+      position: relative;
+      top: 8px;
+      visibility: hidden;
+    }
+    &-img11{
+      position: relative;
+      top: -230px;
+    }
+    &-img12{
+      position: relative;
+      top: -228px;
+    }
+  }
+}

@@ -77,7 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 html,
 body {
   overflow-x: hidden;
-  padding-bottom: 40px;
 }
 
 .container {
@@ -92,6 +91,12 @@ body {
   position: relative;
 }
 
+.btn__anim:hover{
+  position: relative;
+  top: 2px;
+  left: 0;
+  border-bottom: 2px solid #000;
+}
 .header {
   padding: 45px 20px 0 20px;
   max-width: 1240px;
@@ -282,6 +287,10 @@ body {
   height: 37px;
   width: 140px;
   text-align: center;
+  border-bottom: 4px solid #000;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .subtitle {
@@ -331,7 +340,8 @@ body {
   padding-top: 37px;
 }
 .bouncy__button {
-  padding-top: 37px;
+  margin-top: 40px;
+  /* padding-top: 37px;   */
 }
 @media (max-width: 450px) {
   .bouncy__button {
@@ -814,5 +824,57 @@ body {
     top: -228px;
   }
 }
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+.modal__item {
+  width: 400px;
+  height: 400px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.modal__title {
+  text-align: center;
+  font-size: 25px;
+}
+.modal__text {
+  padding: 10px;
+  font-size: 18px;
+}
+.modal__button {
+  display: block;
+  margin: 80px auto;
+}
+
+.modal__close {
+
+}
+.modal__close::after {
+  height: 1px;
+  width: 10px;
+  color: #000;
+}
+.modal__close::after {
+  height: 4px;
+  width: 10px;
+  color: #000;
+}
+.show {
+  display: block;
+  overflow: hidden;
+}
+.hide {
+  display: none ;
+}
+
+
+
 
 /*# sourceMappingURL=CSS.css.map */
